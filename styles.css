@@ -1,0 +1,129 @@
+/*--------------------------------------------------------------------------
+
+CSS, XHTML, Images and Design Files are Copyright 2013 SquarePlanIT, LLC. 
+All Rights Reserved.
+
+--------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------
+	Reset Browser Defaults
+--------------------------------------------------------------------------*/
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Roadgeek2005SeriesC', sans-serif;
+}
+/*--------------------------------------------------------------------------
+	Containers
+--------------------------------------------------------------------------*/
+.container {
+	width: 250px;
+	height: 250px;
+	color: #FFFFFF;
+}
+/*--------------------------------------------------------------------------
+	Text & General Links
+--------------------------------------------------------------------------*/
+.header {
+	margin: 15px 0px 8px 0px;
+	text-transform: uppercase;
+	color: #555555;
+	font-size: 20px;
+	text-align: center;
+}
+
+.current-temp {
+	font-size: 114px;
+	text-align: center;
+}
+
+.current-temp span {
+	font-size: 65px;
+	vertical-align: top;
+}
+
+.secondary-info {
+	clear: both;
+	height: 55px;
+}
+
+.temp {
+	float: left;
+	text-transform: uppercase;
+	font-size: 30px;
+	padding: 3px 5px 0px 7px;
+}
+
+.temp-label {
+	float: left;
+	margin: 0px 5px 0px 12px;
+	font-size: 18px;
+	color: #808080;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.temp-range {
+	font-size: 16px;
+}
+
+.humidity {
+	float: left;
+	margin-right: 36px;
+	padding: 3px 0px 2px 20px;
+	font-size: 24px;
+	background: url('humidity.png') no-repeat;
+}
+
+.away-status {
+	float: left;
+	padding: 4px 0px 2px 32px;
+	font-size: 24px;
+	text-transform: uppercase;
+	background: url('away.png') no-repeat;
+}
+
+.fan-status {
+	float: left;
+	padding-left: 15px;
+	margin-right: 36px;
+}
+
+/*define rotate and set parameters */
+@-webkit-keyframes rotate {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(359deg);
+	}
+}
+
+.fan-status-running {
+	-webkit-animation-name:             rotate; 
+    -webkit-animation-duration:         8s; 
+    -webkit-animation-iteration-count:  infinite;
+    -webkit-animation-timing-function: 	linear;
+}
+
+.cold {
+	border-left: 5px solid blue;
+}
+
+.hot {
+	border-left: 5px solid red;
+}
+
+.off {
+	border-left: 5px solid gray;
+}
+
+.temp-off {
+	font-size: 28px;
+}
+/*--------------------------------------------------------------------------
+	Elements
+--------------------------------------------------------------------------*/
+.leaf {
+	background: url('leaf.png') 50px 5px no-repeat;
+}
