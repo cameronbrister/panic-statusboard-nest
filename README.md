@@ -11,7 +11,7 @@ Requirements
 
 Release Notes
 ---
-This is very much a first-run release. I plan to nix the meta refresh in favor of AJAX. This will stop the fan icon from disappearing momentarily on refresh if the fan on the Nest is actually running.
+This is very much a first-run release. I plan to nix the meta refresh in favor of AJAX. This will stop the fan icon from disappearing momentarily on refresh if the fan on the Nest is actually running, and deal with the occasional 502 response from Nest.
 
 Acknowledgements
 ---
