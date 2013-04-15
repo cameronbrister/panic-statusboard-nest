@@ -5,7 +5,7 @@ Generates a panel for Panic's Status Board for iOS that displays current stats f
 
 Release Notes
 =============
-This is very much a first-run release. I plan to nix the meta refresh in <head> in favor of AJAX. This will stop the fan icon from disappearing momentarily on refresh if the fan on the Nest is actually running.
+This is very much a first-run release. I plan to nix the meta refresh in favor of AJAX. This will stop the fan icon from disappearing momentarily on refresh if the fan on the Nest is actually running.
 
 Acknowledgements
 ================
