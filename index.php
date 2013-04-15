@@ -41,7 +41,7 @@ $device_humidity 	= round($device_info['current_state']['humidity'], 0);
 $device_leaf 		= $device_info['current_state']['leaf'];
 $device_fan 		= $device_info['current_state']['fan'];
 $device_auto_away 	= $device_info['current_state']['auto_away'];
-$device_manual_away = $device_info['current_state']['manual_away'];
+$device_manual_away	= $device_info['current_state']['manual_away'];
 $target_mode 		= $device_info['target']['mode'];
 $target_temp 		= round($device_info['target']['temperature'], 0);
 
@@ -150,7 +150,9 @@ else {
 			
 			<div class="secondary-info">
 				<div class="fan-status"><img src="fan.png" <?php echo($fan_status); ?> /></div>
+				
 				<div class="humidity"><?php echo($device_humidity); ?>&#37;</div>
+				
 				<div class="away-status"><?php echo($device_away); ?></div>
 			</div>
 		</div>
