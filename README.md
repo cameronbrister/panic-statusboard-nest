@@ -17,3 +17,5 @@ Acknowledgements
 ---
 * Uses Guillaume Boudreau's Nest API written in PHP, with a few slight modifications - https://github.com/gboudreau/nest-api
 * Icons from Nest's official dashboard - https://home.nest.com/home
+
+<img src="https://piwik.squareplanit.com/piwik.php?idsite=1&amp;rec=1" style="border:0" alt="" />
