@@ -1,6 +1,6 @@
 <?php
 
-require_once('nest.class.php');
+require_once('nest-api/nest.class.php');
 
 /*--------------------------------------------------------------------------*/
 // your nest username and password
@@ -24,26 +24,26 @@ $nest = new Nest();
 /*--------------------------------------------------------------------------*/
 // get device info
 /*--------------------------------------------------------------------------*/
-
-$location_info 		= $nest->getUserLocations();
-$device_info 		= $nest->getDeviceInfo();
+$location_info 	= $nest->getUserLocations();
+$device_info 	= $nest->getDeviceInfo();
 
 /*--------------------------------------------------------------------------*/
 // set appropriate variables
 /*--------------------------------------------------------------------------*/
 
-$location_temp 		= round($location_info[0]['outside_temperature'], 0);
-$device_mode		= $device_info['current_state']['mode'];
-$device_temp 		= round($device_info['current_state']['temperature'], 0);
-$device_ac			= $device_info['current_state']['ac'];
-$device_heat		= $device_info['current_state']['heat'];
-$device_humidity 	= round($device_info['current_state']['humidity'], 0);
-$device_leaf 		= $device_info['current_state']['leaf'];
-$device_fan 		= $device_info['current_state']['fan'];
-$device_auto_away 	= $device_info['current_state']['auto_away'];
-$device_manual_away	= $device_info['current_state']['manual_away'];
-$target_mode 		= $device_info['target']['mode'];
-$target_temp 		= round($device_info['target']['temperature'], 0);
+$location_temp 		= round($location_info[0]->outside_temperature, 0);
+$device_mode		= $device_info->current_state->mode;
+$device_temp 		= round($device_info->current_state->temperature, 0);
+$device_ac			= $device_info->current_state->ac;
+$device_heat		= $device_info->current_state->heat;
+$device_humidity 	= round($device_info->current_state->humidity, 0);
+$device_leaf 		= $device_info->current_state->leaf;
+$device_fan 		= $device_info->current_state->fan;
+$device_auto_away 	= $device_info->current_state->auto_away;
+$device_manual_away	= $device_info->current_state->manual_away;
+$target_mode 		= $device_info->target->mode;
+$target_temp 		= round($device_info->target->temperature, 0);
+
 
 /*--------------------------------------------------------------------------*/
 // set away status
@@ -64,7 +64,7 @@ else {
 
 //unit is in range-mode. style the temperature range appropriately
 if ($target_mode == 'range') {
-	$target_temp = '<div class="temp-range">' . round($device_info['target']['temperature'][0], 0) . '&deg;</div><div class="temp-range">' . round($device_info['target']['temperature'][1], 0) . '&deg;</div>';
+	$target_temp = '<div class="temp-range">' . round($device_info->target->temperature[0], 0) . '&deg;</div><div class="temp-range">' . round($device_info->target->temperature[1], 0) . '&deg;</div>';
 }
 //unit is off, instead of displaying set temp, we'll display 'off'
 elseif ($target_mode == 'off') {

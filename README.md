@@ -11,11 +11,11 @@ Requirements
 
 Release Notes
 ---
-This is very much a first-run release. I plan to nix the meta refresh in favor of AJAX. This will stop the fan icon from disappearing momentarily on refresh if the fan on the Nest is actually running, and deal with the occasional 502 response from Nest.
+This is very much a beta release. I plan to nix the meta refresh in favor of AJAX. This will stop the fan icon from disappearing momentarily on refresh if the fan on the Nest is actually running, and deal with the occasional 502 response from Nest.
 
 Acknowledgements
 ---
-* Uses Guillaume Boudreau's Nest API written in PHP, with a few slight modifications - https://github.com/gboudreau/nest-api
+* Uses Guillaume Boudreau's Nest API - https://github.com/gboudreau/nest-api
 * Icons from Nest's official dashboard - https://home.nest.com/home
 
 <img src="https://piwik.squareplanit.com/piwik.php?idsite=3&amp;rec=1" style="border:0" alt="" />
